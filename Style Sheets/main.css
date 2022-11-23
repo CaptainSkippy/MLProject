@@ -1,0 +1,150 @@
+*{
+    background-color: #B5CDE6;
+    margin: 0px;
+    text-align: center;
+}
+
+#title{
+    background-color: #8D9FB3;
+    font-family: Montserrat;
+    font-size: 400%;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+a:visited{
+    color: black;
+}
+
+a{ 
+    text-decoration: none;
+}
+
+a:link{
+    color: black;
+}
+
+.subTitle{
+    font-size: 100%;
+}
+
+.subjectArea{
+    font-size: 100%;
+}
+
+body {
+    font-family: Roboto Mono;
+}
+
+.grid-container{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: grid;
+    grid-row-gap: 100px;
+    grid-template-columns: auto auto auto;
+}
+
+#nameTag{
+    font-size: 25%;
+    background-color: #8D9FB3;
+}
+
+#outPutArea{
+    /*background-color: #8D9FB3;*/
+    font-size: 125%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 75px;
+    margin-right: 75px;
+}
+
+.noselect{
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+input[type=submit]:hover{
+    background-color: #788797;
+    border: none;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 150%;
+    border-radius: 7.5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+input[type=submit]{
+    background-color: #8D9FB3;
+    border: none;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 150%;
+    border-radius: 7.5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.form-inline{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+.form-inline label {
+    margin: 10px 10px 5px 10px;
+}
+
+.form-inline input {
+    vertical-align: middle;
+    margin: 5px 10px 5px 10px;
+    padding: 5px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+
+@media (max-width: 800px) {
+    .form-inline input {
+        margin: 10px 0;
+    }
+
+    .form-inline {
+        flex-direction: column;
+        align-items: stretch;
+    }
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+button:hover{
+    background-color: #788797;
+    border: none;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 150%;
+    border-radius: 7.5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+button{
+    background-color: #8D9FB3;
+    border: none;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 150%;
+    border-radius: 7.5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
