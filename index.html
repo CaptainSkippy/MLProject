@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ML Project</title>
+
+        <link rel="stylesheet" href="Style Sheets/main.css">
+
+        <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@4.0.0/dist/tf.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-vis@1.5.1/dist/tfjs-vis.umd.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css?family=ABeeZee" rel='stylesheet'>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+    </head>
+    <body>
+        <h1 id="title">
+            Machine Learning Project
+            <div id="nameTag">
+                Elijah Vandersteen
+            </div>
+        </h1>
+
+        <br>
+        <br>
+
+        <form id="myForm">
+            <input type="file" accept=".csv" id="csvFile" />
+
+            <br>
+            <br>
+
+            <input type="submit" value="Upload and Train" />
+        </form>
+
+        <br>
+        <br>
+
+        <form id="form-inline">
+            <label for="Make">Make: </label>
+                <select id="Make" name="Make">
+                    <option value="1">Armstrong Siddeley</option>
+                    <option value="2" selected>Audi</option>
+                    <option value="3">Citroen</option>
+                    <option value="4">Daihatsu</option>
+                    <option value="5">De Tomaso</option>
+                    <option value="6">Ford</option>
+                    <option value="7">Foton</option>
+                    <option value="8">Holden</option>
+                    <option value="9">Honda</option>
+                    <option value="10">Hyundai</option>
+                    <option value="11">Kia</option>
+                    <option value="12">Lamborghini</option>
+                    <option value="13">Lincoln</option>
+                    <option value="14">London Taxi Company</option>
+                    <option value="15">Maserati</option>
+                    <option value="16">Mazda</option>
+                    <option value="17">Mclaren</option>
+                    <option value="18">Mercedes</option>
+                    <option value="19">Mini</option>
+                    <option value="20">Mitsubishi</option>
+                    <option value="21">Nissan</option>
+                    <option value="22">Rolls-Royce</option>
+                    <option value="23">Suzuki</option>
+                    <option value="24">Tesla</option>
+                    <option value="25">Toyota</option>
+                    <option value="26">Volvo</option>
+                    <option value="27">Buick</option>
+                </select>
+            <label for="Year">Year: </label>
+                <input type="number" id="Year" name="Year" min="0" max="2023">
+            <label for="Odometer">Odometer(km): </label>
+                <input type="number" id="Odometer" name="Odometer" min="0">
+            <label for="BodyType">Body Type: </label>
+                <select id="BodyType" name="BodyType">
+                    <option value="1" selected>Sedan</option>
+                    <option value="2">Hatch</option>
+                    <option value="3">Coupe</option>
+                    <option value="4">Wagon</option>
+                    <option value="5">SUV</option>
+                    <option value="6">Single Cab Ute</option>
+                    <option value="7">Dual Cab Ute</option>
+                </select>
+            <label for="Fuel">Fuel Type: </label>
+                <select id="Fuel" name="Fuel">
+                    <option value="1" selected>Petrol</option>
+                    <option value="2">Diesel</option>
+                    <option value="3">Electric</option>
+                    <option value="4">Hybrid</option>
+                </select>
+            <label for="FuelConsumption">Fuel Consumption(L/100km): </label>
+                <input type="number" id="FuelConsumption" name="FuelConsumption" min="0">
+            <label for="DriveTrain">Drive Train: </label>
+                <select id="DriveTrain" name="DriveTrain">
+                    <option value="1" selected>RWD</option>
+                    <option value="2">FWD</option>
+                    <option value="3">AWD</option>
+                    <option value="4">4WD</option>
+                </select>
+            <label for="Transmission">Transmission: </label>
+                <select id="Transmission" name="Transmission">
+                    <option value="1" selected>Automatic</option>
+                    <option value="2">Manual</option>
+                </select>
+            <label for="Seats">Seats: </label>
+                <input type="number" id="Seats" name="Seats" min="0">
+            <label for="Colour">Colour: </label>
+                <select id="Colour" name="Colour">
+                    <option value="1">White</option>
+                    <option value="2" selected>Black</option>
+                    <option value="3">Grey</option>
+                    <option value="4">Blue</option>
+                    <option value="5">Red</option>
+                    <option value="6">Green</option>
+                    <option value="7">Silver</option>
+                    <option value="8">Gold</option>
+                    <option value="9">Purple</option>
+                    <option value="10">Pink</option>
+                    <option value="11">Yellow</option>
+                    <option value="12">Orange</option>
+                </select>
+        </form>
+
+        <br>
+        <br>
+
+        <script src="main.js"></script>
+
+        <button onclick="predictFeatures();">Predict</button>
+
+        <br>
+        <br>
+
+        <div id="outPutArea">
+            •••
+        </div>
+    </body>
+
+    <footer class="footer">
+    </footer>
+</html>
