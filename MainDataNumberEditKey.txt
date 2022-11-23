@@ -1,0 +1,67 @@
+Transmission
+- Automatic: 1
+- Manual: 2
+
+DriveTrain
+- RWD: 1
+- FWD: 2
+- AWD: 3
+- 4WD: 4
+
+Fuel
+- Petrol: 1
+- Diesel: 2
+- Electric: 3
+- Hybrid: 4
+
+BodyType
+- Sedan: 1
+- Hatch: 2
+- Coupe: 3 
+- Wagon: 4
+- SUV: 5
+- Single Cab: 6
+- Dual Cab: 7
+
+Colour
+- White: 1
+- Black: 2
+- Grey: 3
+- Blue: 4
+- Red: 5
+- Green: 6
+- Silver: 7
+- Gold: 8
+- Purple: 9
+- Pink: 10
+- Yellow: 11
+- Orange: 12
+
+Make
+- Armstrong Siddeley: 1
+- Audi: 2
+- Citroen: 3
+- Daihatsu: 4
+- De Tomaso: 5
+- Ford: 6
+- Foton: 7
+- Holden: 8
+- Honda: 9
+- Hyundai: 10
+- Kia: 11
+- Lamborghini: 12
+- Lincoln: 13
+- London Taxi Company: 14
+- Maserati: 15
+- Mazda: 16
+- Mclaren: 17
+- Mercedes: 18
+- Mini: 19
+- Mitsubishi: 20
+- Nissan: 21
+- Rolls-Royce: 22
+- Suzuki: 23
+- Tesla: 24
+- Toyota: 25
+- Volvo: 26
+- Buick: 27
