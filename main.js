@@ -93,6 +93,7 @@ myForm.addEventListener("submit", function (e) {
                         onEpochEnd: async (epoch, logs) => {
                         if ((epoch + 1) % 10 === 0) {
                             console.log(`Epoch ${epoch + 1}: error: ${logs.loss}`)
+                            document.getElementById("Status").innerHTML = String(Math.ceil(+epoch / (+document.getElementById("epochs").value / 10) * 10)) + "% Ready";
                         }
                         },
                     },
