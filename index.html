@@ -6,6 +6,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>ML Project</title>
 
+        <link rel="shortcut icon" href="icon.ico" type="image/x-icon">
+
         <link rel="stylesheet" href="Style Sheets/main.css">
 
         <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@4.0.0/dist/tf.min.js"></script>
@@ -30,6 +32,12 @@
 
         <form id="myForm">
             <input type="file" accept=".csv" id="csvFile" />
+
+            <br>
+            <br>
+
+            <label for="epochs">Epochs: </label>
+            <input type="number" id="epochs" name="epochs" value=100>
 
             <br>
             <br>
@@ -131,6 +139,12 @@
         <script src="main.js"></script>
 
         <button onclick="predictFeatures();">Predict</button>
+
+        <br>
+
+        <div id="Status">
+            Not Ready
+        </div>
 
         <br>
         <br>
