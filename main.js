@@ -86,9 +86,10 @@ myForm.addEventListener("submit", function (e) {
             const train = async () => {
                 console.log("Training...");
                 document.getElementById("Status").innerHTML = "Not Ready";
+                const initEpoch = +document.getElementById("epochs").value;
                 model.compile({ optimizer: tf.train.sgd(ALPHA), loss: "meanSquaredError" })
                 await model.fit(data1, data2, {
-                    epochs: Math.ceil(+document.getElementById("epochs").value / 10) * 10,
+                    epochs: Math.ceil(initEpoch / 10) * 10,
                     callbacks: {
                         onEpochEnd: async (epoch, logs) => {
                         if ((epoch + 1) % 10 === 0) {
@@ -114,7 +115,7 @@ myForm.addEventListener("submit", function (e) {
 function predictFeatures(){
     if(document.getElementById("Status").innerHTML == "Ready"){
         console.log(retrieveFeatureValues().arraySync());
-        document.getElementById("outPutArea").innerHTML = model.predict(retrieveFeatureValues()).arraySync();
+        document.getElementById("outPutArea").innerHTML = "$" + model.predict(retrieveFeatureValues()).arraySync();
         console.log(model.predict(retrieveFeatureValues()).arraySync());
     }
 }
